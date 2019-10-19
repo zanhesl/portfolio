@@ -1,0 +1,79 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item {
+  display: none;
+  position: relative;
+  animation: 2s ease-in-out;
+}
+
+.active, .next {
+  display: block;
+  width: 100%;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.item img {
+  width: 400px;
+}
+
+/* .content-description {
+  width: 50%;
+} */
+
+.arrow {
+  background-color: red;
+  cursor: pointer;
+}
+
+.item-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
