@@ -22,6 +22,16 @@ document.querySelector(`.desc-opener-1`).addEventListener(`click`, function(evt)
   }
 });
 
+window.onresize = function (evt) {
+  if (document.documentElement.clientWidth > 800) {
+    document.querySelector(`.description-points`).style.display = `block`;
+    document.querySelector(`.description-points-1`).style.display = `block`;
+  } else {
+    document.querySelector(`.description-points`).style.display = `none`;
+    document.querySelector(`.description-points-1`).style.display = `none`;
+  }
+}
+
 const images = document.querySelectorAll(`.item`);
 let currentItem = 0;
 let canSwitch = true;

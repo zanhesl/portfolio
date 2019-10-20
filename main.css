@@ -231,6 +231,10 @@
   }
 }
 
+.description-points, .description-points-1{
+	margin: auto;
+}
+
 .desc-opener, .desc-opener-1 {
 	display: none;
 	margin-bottom: 5%;
