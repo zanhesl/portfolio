@@ -7,27 +7,88 @@
   <title></title>
 </head>
 
-<body>
-  <div class="slider">
-    <div class="arrow left">&lt;</div>
-    <div class="item-container">
-      <div class="item active">
-          <div class="content-description">
-            <h2>TheYallow</h2>
-          </div>
-          <img src="./img/theyallow.jpg" alt="project">
+<body class="main-body">
+  <div class="content-wrapper">
+    <section class="personal-info">
+      <div class="img-wrapper">
+        <img src="./img/picture.jpg" alt="my-portrait">
       </div>
-      <div class="item">
-        <div class="content">
-          <div class="content-description">
-            <h2>Repair design project</h2>
-          </div>
-          <img src="./img/repair.png" alt="project">
+      <div class="bio">
+        <h1>Alexander Lavrukhine</h1>
+        <div class="social-links">
+          <a href="https://vk.com/hugeclockworkorange">VK</a>
+          <a href="https://github.com/zanhesl">GitHub</a>
         </div>
       </div>
+    </section>
+
+    <div class="education">
+      <div class="edu-description">
+        <h2>Education</h2>
+        <button type="button" name="edu-opener" class="edu-opener">
+          <img src="./img/swipe.svg" alt="">
+        </button>
+      </div>
+      <div class="edu-points">
+        <ul>
+          <li>
+            <h3>School</h3>
+            <p>2004 - 2015</p>
+          </li>
+          <li>
+            <h3>University</h3>
+            <p>2016 - 2020</p>
+          </li>
+          <li>
+            <h3>RSSchool Courses</h3>
+            <p>2019 - 2020</p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="arrow right">&gt;</div>
+
+    <div class="slider">
+      <div class="arrow left"><img src="./img/swipe.svg" alt=""></div>
+      <div class="item-container">
+        <div class="item active">
+          <div class="content-description">
+            <button type="button" name="desc-opener" class="desc-opener">Show description</button>
+            <div class="description-points">
+              <h2>TheYallow</h2>
+              <ul>
+                <li>Basic markup skills</li>
+                <li>Pixel-perfect experience</li>
+                <li>Basic @media skills</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="img-swipe-wrapper">
+            <a href="./yallow.html"><img src="./img/theyallow.jpg" alt="project"></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content-description">
+            <button type="button" name="desc-opener-1" class="desc-opener-1">Show description</button>
+            <div class="description-points-1">
+              <h2>Repair design project</h2>
+              <ul>
+                <li>Adaptive markup skills</li>
+                <li>Mobile-optimization skills</li>
+                <li>Advanced markup skills</li>
+              </ul>
+            </div>
+          </div>
+          <div class="img-swipe-wrapper">
+            <a href="./repair.html"><img src="./img/repair.png" alt="project"></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="arrow right"><img src="./img/swipe.svg" alt=""></div>
+    </div>
   </div>
+
   <script src="./script.js"></script>
 </body>
 
